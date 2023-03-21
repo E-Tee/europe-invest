@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+di {
+    border: 1px red solid;
+}
+
+.flex   {
+    display: flex;
+}
+
+a   {
+    text-decoration: none;
+    color: white;
+}
+
+.trapezoid    {
+    width: 50%;
+    height: 100%;
+}
+
+
+.wrapper    {
+    position: absolute;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.circle {
+    position: absolute;
+    z-index: 10;
+    top: 38%;
+    left: 44.6%;
+    width: 15.125em;
+    height: 15.125em;
+    -moz-border-radius: 7.563em;
+    -webkit-border-radius: 7.563em;
+    border-radius: 7.563em;
+    background-color: white;
+}
+
+.main-logo-container    {
+    padding: 1.875em;
+}
+
+.container-top  {
+    position: relative;
+    top: 0;
+    height: 50%;
+    background-color: grey;
+}
+
+/*Низ*/
+
+.container-bottom   {
+    position: relative;
+    bottom: 0;
+    height: 50%;
+    background-color: #aaf2f1;
+
+}
+
+
+/*Треугольник*/
+
+.triangle   {
+    position: absolute;
+    left: 33.5%;
+    bottom: 0;
+    z-index: 1;
+    /*width: 43.75em;
+    height: 32.5em;*/
+    width: 35%;
+    height: 100%;
+    background-image: url(../img/png/background.svg.png);
+    overflow: hidden; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /*точки фигуры в системе координат*/
+}
+
+.triangle:hover::before   {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 43.75em;
+    height: 32.5em;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/*
+.triangle img   {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+*/
+
+.triangle .icon-container   {
+    position: absolute;
+    top: 30%;
+    padding-left: 46%;
+}
+
+.triangle .logo-container   {
+    position: relative;
+    top: 30%;
+    left: 38%;
+}
+
+.triangle .link-triangle    {
+    position: relative;
+    display: block;
+    top: 27%;
+    left: 34%;
+    padding-top: 18%;
+}
+
+.triangle .icon-container, .triangle .logo-container, .triangle .link-triangle  {
+    margin-bottom: 1em;
+    margin-right: 1em;
+} 
+
+/*Нижняя правая трапеция*/
+
+
+
+
+
+/*
+.triangle   {
+    position: absolute;
+    z-index: 1;
+    left: 44em;
+    bottom: 0;
+    width: 0;
+    border-right: 22.5em solid transparent;
+    border-left: 23em solid transparent;
+    border-bottom: 27em solid rgba(255, 0, 0, 0);
+}
+
+.triangle:hover   {
+        position: absolute;
+        z-index: 0;
+        left: 42em;
+        bottom: 0;
+        width: 0;
+        border-right: 22.5em solid transparent;
+        border-left: 23em solid transparent;
+        border-bottom: 27em solid rgba(255, 0, 0, 0.3);
+} */
+
+
