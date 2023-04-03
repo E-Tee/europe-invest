@@ -20,55 +20,38 @@ a   {
 }
 
 .trapezoid    {
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: 100vh;
 }
 
 
 .wrapper    {
     position: absolute;
+    justify-content: center;
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
 .circle {
-    position: absolute;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
     z-index: 4;
-    top: 35vh;
-    left: 43.5vw;
-    width: 15.125em;
-    height: 15.125em;
-    -moz-border-radius: 7.563em;
-    -webkit-border-radius: 7.563em;
-    border-radius: 7.563em;
+    width: 14rem;
+    height: 14rem;
+    -moz-border-radius: 7rem;
+    -webkit-border-radius: 7rem;
+    border-radius: 7rem;
     background-color: white;
 }
 
-.main-logo-container    {
-    padding: 1.875em;
+
+.trapezoid-topright .logo-container, .trapezoid-topleft .logo-container {
+    top: 2vh;
 }
-
-.container-top  {
-    position: relative;
-    top: 0;
-    height: 50%;
-    background-color: grey;
-}
-
-/*Низ*/
-
-.container-bottom   {
-    position: relative;
-    bottom: 0;
-    height: 50%;
-    background-color: #aaf2f1;
-
-}
-
 
 /*Треугольник*/
 
@@ -79,7 +62,7 @@ a   {
     z-index: 1;
     width: 50vw;
     height: 50vh;
-    background-image: url('../img/png/triangle.png');
+    background-image: url('../img/jpg/triangle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden; 
@@ -99,18 +82,20 @@ a   {
 
 .triangle .logo-container   {
     position: absolute;
-    top: 20vh;
-    left: 20vw;
+    top: 17vh;
+    left: 21.5vw;
 }
 
-.link-triangle    {
+.link    {
     display: block;
-    padding: 18vh 18vw;
+    z-index: 1;
+    padding: 18em 10em;
 }
 
-.triangle .icon-container, .triangle .logo-container, .triangle .link-triangle  {
-    margin-bottom: 1em;
-    margin-right: 1em;
+.triangle .link-triangle   {
+    position: relative;
+    top: 5vh;
+    left: 11vw;
 } 
 
 /*Верхняя левая трапеция*/
@@ -123,7 +108,7 @@ a   {
     height: 50vh;
     overflow: hidden;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
-    background-image: url('../img/png/left-top.png');
+    background-image: url('../img/jpg/left-top.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -139,6 +124,15 @@ a   {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.trapezoid-topleft .logo-container  {
+    left: 28vw;
+}
+
+.link-topleft  {
+    position: relative;
+    left: 5vw;
+}
+
 /*Верхняя правая трапеция*/
 
 .trapezoid-topright {
@@ -149,7 +143,7 @@ a   {
     height: 50vh;
     overflow: hidden;
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
-    background-image: url('../img/png/right-top.png');
+    background-image: url('../img/jpg/right-top.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -165,6 +159,14 @@ a   {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.trapezoid-topright .logo-container  {
+    left: 15vw;
+}
+
+.link-topright  {
+    position: relative;
+    right: 5vw;
+}
 
 /*Нижняя левая трапеция*/
 
@@ -177,7 +179,7 @@ a   {
     height: 76vh;
     overflow: hidden;
     clip-path: polygon(0% 0%, 100% 32%, 53% 100%, 0% 100%);
-    background-image: url('../img/png/left-bottom.png');
+    background-image: url('../img/jpg/left-bottom.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -204,7 +206,7 @@ a   {
     height: 76vh;
     overflow: hidden;
     clip-path: polygon(0% 32%, 100% 0%, 100% 100%, 47% 100%);
-    background-image: url('../img/png/right-bottom.png');
+    background-image: url('../img/jpg/right-bottom.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -224,4 +226,30 @@ a   {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo-container {
+    position: absolute;
+    top: 18vh;
+}
+
+@media (max-width: 1366px)  {
+    h2 {
+        font-size: 15px;
+    }
+    
+    .triangle .link-triangle   {
+        position: relative;
+        display: block;
+        z-index: 1;
+        padding: 18em 10em;
+        top: 2vh;
+        left: 9vw;
+    } 
+
+    .triangle .logo-container   {
+        position: absolute;
+        top: 17vh;
+        left: 20vw;
+    }
 }
