@@ -6,10 +6,6 @@
     font-family: 'Jost', sans-serif;
 }
 
-di {
-    border: 1px red solid;
-}
-
 .flex   {
     display: flex;
 }
@@ -83,7 +79,7 @@ a   {
 .triangle .logo-container   {
     position: absolute;
     top: 17vh;
-    left: 21.5vw;
+    left: 20vw;
 }
 
 .link    {
@@ -125,12 +121,12 @@ a   {
 }
 
 .trapezoid-topleft .logo-container  {
-    left: 28vw;
+    right: 13vw;
 }
 
 .link-topleft  {
     position: relative;
-    left: 5vw;
+    left: 7vw;
 }
 
 /*Верхняя правая трапеция*/
@@ -230,7 +226,7 @@ a   {
 
 .logo-container {
     position: absolute;
-    top: 18vh;
+    top: 19vh;
 }
 
 @media (max-width: 1366px)  {
@@ -242,14 +238,15 @@ a   {
         position: relative;
         display: block;
         z-index: 1;
-        padding: 18em 10em;
-        top: 2vh;
-        left: 9vw;
+        padding: 15em 7.8em;
+        top: 0;
+
     } 
 
     .triangle .logo-container   {
         position: absolute;
-        top: 17vh;
+        top: 19vh;
         left: 20vw;
+        margin-bottom: 1em;
     }
 }
