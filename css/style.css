@@ -27,7 +27,6 @@ a   {
 
 .wrapper    {
     position: absolute;
-    align-items: stretch;
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
@@ -38,9 +37,9 @@ a   {
 
 .circle {
     position: absolute;
-    z-index: 10;
-    top: 38%;
-    left: 44.6%;
+    z-index: 4;
+    top: 35vh;
+    left: 43.5vw;
     width: 15.125em;
     height: 15.125em;
     -moz-border-radius: 7.563em;
@@ -75,14 +74,14 @@ a   {
 
 .triangle   {
     position: absolute;
-    left: 33.5%;
+    left: 25vw;
     bottom: 0;
     z-index: 1;
-    /*width: 43.75em;
-    height: 32.5em;*/
-    width: 35%;
-    height: 100%;
-    background-image: url(../img/png/background.svg.png);
+    width: 50vw;
+    height: 50vh;
+    background-image: url('../img/png/triangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden; 
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /*точки фигуры в системе координат*/
 }
@@ -91,43 +90,22 @@ a   {
     content: "";
     position: absolute;
     bottom: 0;
-    width: 43.75em;
-    height: 32.5em;
+    width: 50vw;
+    height: 50vh;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-/*
-.triangle img   {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-*/
-
-.triangle .icon-container   {
-    position: absolute;
-    top: 30%;
-    padding-left: 46%;
-}
 
 .triangle .logo-container   {
-    position: relative;
-    top: 30%;
-    left: 38%;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
 }
 
-.triangle .link-triangle    {
-    position: relative;
+.link-triangle    {
     display: block;
-    top: 27%;
-    left: 34%;
-    padding-top: 18%;
+    padding: 18vh 18vw;
 }
 
 .triangle .icon-container, .triangle .logo-container, .triangle .link-triangle  {
@@ -135,33 +113,115 @@ a   {
     margin-right: 1em;
 } 
 
-/*Нижняя правая трапеция*/
+/*Верхняя левая трапеция*/
 
-
-
-
-
-/*
-.triangle   {
+.trapezoid-topleft  {
     position: absolute;
     z-index: 1;
-    left: 44em;
-    bottom: 0;
-    width: 0;
-    border-right: 22.5em solid transparent;
-    border-left: 23em solid transparent;
-    border-bottom: 27em solid rgba(255, 0, 0, 0);
+    top: 0;
+    left: 0;
+    height: 50vh;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
+    background-image: url('../img/png/left-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.triangle:hover   {
-        position: absolute;
-        z-index: 0;
-        left: 42em;
-        bottom: 0;
-        width: 0;
-        border-right: 22.5em solid transparent;
-        border-left: 23em solid transparent;
-        border-bottom: 27em solid rgba(255, 0, 0, 0.3);
-} */
+.trapezoid-topleft:hover::before    {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Верхняя правая трапеция*/
+
+.trapezoid-topright {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
+    background-image: url('../img/png/right-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trapezoid-topright:hover::before   {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 
+/*Нижняя левая трапеция*/
+
+.trapezoid-bottomleft   {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 51vw;
+    height: 76vh;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 32%, 53% 100%, 0% 100%);
+    background-image: url('../img/png/left-bottom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trapezoid-bottomleft:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 51vw;
+    height: 76vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Нижняя правая трапеция*/
+
+.trapezoid-bottomright  {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    width: 51vw;
+    height: 76vh;
+    overflow: hidden;
+    clip-path: polygon(0% 32%, 100% 0%, 100% 100%, 47% 100%);
+    background-image: url('../img/png/right-bottom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trapezoid-bottomright:hover::before    {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 51vw;
+    height: 76vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.trapezoid  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
