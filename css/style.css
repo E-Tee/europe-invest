@@ -283,7 +283,7 @@
         margin-right: 3vw;
     }
     
-    .circle, .border-bottomleft, .border-bottomright, .trapezoid-bottomright:hover::before, .trapezoid-bottomleft:hover::before, .trapezoid-topright:hover::before, .trapezoid-topleft:hover::before, .triangle:hover::before {
+    .circle, .border-bottomleft, .border-bottomright {
         display: none;
     }
 
@@ -316,4 +316,8 @@
             max-height: 100%;
         }
     
+        .trapezoid-bottomright:hover::before, .trapezoid-bottomleft:hover::before, .trapezoid-topright:hover::before, .trapezoid-topleft:hover::before, .triangle:hover::before {
+            position: absolute;
+            width: 100%;
+        }
 }
