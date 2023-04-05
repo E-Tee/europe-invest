@@ -283,13 +283,13 @@
         margin-right: 3vw;
     }
     
-    .circle, .border-bottomleft, .border-bottomright {
+    .circle, .border-bottomleft, .border-bottomright, .trapezoid-bottomright:hover::before, .trapezoid-bottomleft:hover::before, .trapezoid-topright:hover::before, .trapezoid-topleft:hover::before, .triangle:hover::before {
         display: none;
     }
 
     .wrapper    {
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
 
     .container  {
