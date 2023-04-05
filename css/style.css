@@ -320,7 +320,7 @@
         width          : 100%;
         height         : 20vh;
         justify-content: flex-start;
-        border         : 1px white solid;
+        border-bottom  : 1px white solid;
         clip-path      : none;
         background-size: cover;
     }
@@ -329,5 +329,12 @@
     .trapezoid-bottomright {
         max-height: 100%;
     }
-
+    .trapezoid-topleft:hover::before,
+    .trapezoid-topright:hover::before,
+    .trapezoid-bottomleft:hover::before,
+    .trapezoid-bottomright:hover::before,
+    .triangle:hover::before {
+        width: 100%;
+        height: 100%;
+    }
 }
