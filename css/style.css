@@ -288,7 +288,11 @@
     }
 
     .wrapper    {
+        margin: 0 auto;
         flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
     }
 
     .container  {
@@ -302,10 +306,9 @@
     .trapezoid-topleft, .trapezoid-topright, .trapezoid-bottomleft, .trapezoid-bottomright, .triangle   {
         position: relative;
         z-index: 0;
-        top: 0;
         left: 0;
         width: 100%;
-        height: 20vh;
+        height: 19vh;
         justify-content: flex-start;
         border: 1px white solid;
         clip-path: none;
@@ -316,8 +319,4 @@
             max-height: 100%;
         }
     
-        .trapezoid-bottomright:hover::before, .trapezoid-bottomleft:hover::before, .trapezoid-topright:hover::before, .trapezoid-topleft:hover::before, .triangle:hover::before {
-            position: absolute;
-            width: 100%;
-        }
 }
