@@ -56,11 +56,10 @@ a   {
     justify-content: center;
     align-self: center;
     align-items: center;
-    margin: 1px;
     padding: 2vw;
     z-index: 4;
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
     -moz-border-radius: 10vw;
     -webkit-border-radius: 10vw;
     border-radius: 10vw;
@@ -170,7 +169,7 @@ a   {
     left: 0;
     margin-right: 1px;
     width: 51vw;
-    height: 76vh;
+    max-height: 76vh;
     overflow: hidden;
     clip-path: polygon(0% 0%, 100% 32%, 53% 100%, 0% 100%);
     background-image: url('../img/jpg/left-bottom.jpg');
@@ -197,7 +196,7 @@ a   {
     bottom: 0;
     right: 0;
     width: 51vw;
-    height: 76vh;
+    max-height: 76vh;
     overflow: hidden;
     clip-path: polygon(0% 32%, 100% 0%, 100% 100%, 47% 100%);
     background-image: url('../img/jpg/right-bottom.jpg');
