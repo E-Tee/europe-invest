@@ -113,7 +113,7 @@ a   {
     left: 0;
     height: 50vh;
     overflow: hidden;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 50%);
+
     background-image: url('../img/jpg/left-top.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,7 +142,7 @@ a   {
     right: 0;
     height: 50vh;
     overflow: hidden;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
+ 
     background-image: url('../img/jpg/right-top.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,8 +168,8 @@ a   {
     bottom: 0;
     left: 0;
     margin-right: 1px;
-    width: 51vw;
-    max-height: 76vh;
+    width: 50vw;
+    max-height: 72%;
     overflow: hidden;
     clip-path: polygon(0% 0%, 100% 32%, 53% 100%, 0% 100%);
     background-image: url('../img/jpg/left-bottom.jpg');
@@ -182,8 +182,8 @@ a   {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 51vw;
-    height: 76vh;
+    width: 50vw;
+    height: 100%;
     overflow: hidden;
     background: rgba(1, 0, 41, 0.8);
 }
@@ -195,8 +195,8 @@ a   {
     z-index: 2;
     bottom: 0;
     right: 0;
-    width: 51vw;
-    max-height: 76vh;
+    width: 50vw;
+    max-height: 72%;
     overflow: hidden;
     clip-path: polygon(0% 32%, 100% 0%, 100% 100%, 47% 100%);
     background-image: url('../img/jpg/right-bottom.jpg');
@@ -209,8 +209,8 @@ a   {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 51vw;
-    height: 76vh;
+    width: 50vw;
+    height: 100%;
     overflow: hidden;
     background: rgba(1, 0, 41, 0.8);
 }
