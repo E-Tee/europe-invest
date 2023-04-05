@@ -171,7 +171,7 @@ a   {
     width: 50vw;
     max-height: 72%;
     overflow: hidden;
-    clip-path: polygon(0% 0%, 100% 32%, 53% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 34%, 53% 100%, 0% 100%);
     background-image: url('../img/jpg/left-bottom.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,7 +198,7 @@ a   {
     width: 50vw;
     max-height: 72%;
     overflow: hidden;
-    clip-path: polygon(0% 32%, 100% 0%, 100% 100%, 47% 100%);
+    clip-path: polygon(0% 34%, 100% 0%, 100% 100%, 47% 100%);
     background-image: url('../img/jpg/right-bottom.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,7 +216,7 @@ a   {
 }
 
 .topleft-container, .topright-container {
-    top: 8vh;
+    top: 6vh;
 }
 
 .topleft-container  {
