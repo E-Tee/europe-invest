@@ -308,9 +308,10 @@ a {
     .triangle {
         position       : relative;
         left           : 0;
-        width          : inherit;
-        height         : 20vh;
-        justify-content: start;
+        width          : 100%;
+        -webkit-height : 19vh;
+        height: 19vh;
+        justify-content: flex-start;
         clip-path      : none;
     }
 
