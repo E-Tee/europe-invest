@@ -302,7 +302,6 @@ a {
     .trapezoid-bottomright,
     .triangle {
         position       : relative;
-        z-index        : 0;
         left           : 0;
         width          : 100%;
         height         : 20vh;
@@ -311,7 +310,14 @@ a {
         clip-path      : none;
     }
 
+    .trapezoid-topleft,
+    .trapezoid-topright,
+    .trapezoid-bottomleft,
+    .triangle   {
+        margin: 0 0 1px 0;
+    }
 
+    
     .trapezoid-topleft:hover::before,
     .trapezoid-topright:hover::before,
     .trapezoid-bottomleft:hover::before,
@@ -322,6 +328,8 @@ a {
     }
 
     .trapezoid-topleft {
+        margin-right: 0;
+
         border-right: none;
     }
 
