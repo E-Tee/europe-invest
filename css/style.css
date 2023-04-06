@@ -276,11 +276,6 @@ a {
         font-size: 3em;
     }
 
-    body    {
-        width: 100%;
-        height: 100%;
-    }
-
     .logo-container {
         margin-right: 3vw;
     }
@@ -291,12 +286,12 @@ a {
     }
 
     .wrapper {
-
+        width: 100%;
+        height: 100%;
         justify-content: space-between;
         flex-direction: column;
         flex-wrap: nowrap;.
         align-content: stretch;
-
     }
 
     .container {
