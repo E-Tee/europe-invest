@@ -18,7 +18,9 @@ html, body{
     display: flex;
 }
 
-a {
+a { 
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     color          : white;
     font-size      : 1.1vw;
@@ -284,9 +286,10 @@ a {
     }
 
     .wrapper {
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap;.
+        align-content: stretch;
 
     }
 
@@ -305,10 +308,9 @@ a {
     .triangle {
         position       : relative;
         left           : 0;
-        width          : 100%;
+        width          : inherit;
         height         : 20vh;
-        justify-content: flex-start;
-        border-bottom  : 1px white solid;
+        justify-content: start;
         clip-path      : none;
     }
 
@@ -316,7 +318,9 @@ a {
     .trapezoid-topright,
     .trapezoid-bottomleft,
     .triangle   {
+        box-sizing: border-box;
         margin: 0 0 1px 0;
+        border-bottom  : 1px white solid;
     }
 
     
