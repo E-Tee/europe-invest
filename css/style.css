@@ -284,8 +284,10 @@ a {
     }
 
     .wrapper {
-        justify-content: space-between;
-        display: block;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
     }
 
     .container {
@@ -328,8 +330,6 @@ a {
     }
 
     .trapezoid-topleft {
-        margin-right: 0;
-
         border-right: none;
     }
 
